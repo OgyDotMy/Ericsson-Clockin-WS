@@ -3,9 +3,9 @@
 $dbhost="localhost";
 $dbuser="root";
 $dbpass="";
-$dbtable="log";
+$dbname="log";
 
-$connect=mysqli_connect($dbhost,$dbuser,$dbpass,$dbtable);
+$connect=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 
 if(!$connect){
     die("connection closed").mysqli_connect_error();
